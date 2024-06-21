@@ -14,6 +14,7 @@
 		F83231542C12B91C00A28191 /* GuessTheFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83231532C12B91C00A28191 /* GuessTheFlagTests.swift */; };
 		F832315E2C12B91C00A28191 /* GuessTheFlagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832315D2C12B91C00A28191 /* GuessTheFlagUITests.swift */; };
 		F83231602C12B91C00A28191 /* GuessTheFlagUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832315F2C12B91C00A28191 /* GuessTheFlagUITestsLaunchTests.swift */; };
+		F89ECBDE2C25410400887F35 /* SetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89ECBDD2C25410400887F35 /* SetDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F83231592C12B91C00A28191 /* GuessTheFlagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheFlagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F832315D2C12B91C00A28191 /* GuessTheFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITests.swift; sourceTree = "<group>"; };
 		F832315F2C12B91C00A28191 /* GuessTheFlagUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F89ECBDD2C25410400887F35 /* SetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F83231442C12B91A00A28191 /* ContentView.swift */,
 				F83231462C12B91B00A28191 /* Assets.xcassets */,
 				F83231482C12B91B00A28191 /* Preview Content */,
+				F89ECBDD2C25410400887F35 /* SetDetail.swift */,
 			);
 			path = GuessTheFlag;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83231452C12B91A00A28191 /* ContentView.swift in Sources */,
+				F89ECBDE2C25410400887F35 /* SetDetail.swift in Sources */,
 				F83231432C12B91A00A28191 /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

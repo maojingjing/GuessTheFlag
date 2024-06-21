@@ -35,6 +35,16 @@ struct ContentView: View {
                 
             }
             
+            Button("show set result") {
+                print("Best set " + (bestSet(setList: [SetDetail(lbs: 10, reps: 7), SetDetail(lbs: 15, reps: 2), SetDetail(lbs: 15, reps: 3)]) ?? "empty"))
+            }
+            
+            Spacer()
+            
+            Image(.girlsRun).resizable().aspectRatio(contentMode: .fill).frame(width: 200, height: 100)
+            
+            Spacer()
+            
             Button("Schedule Notification") {
                 let content = UNMutableNotificationContent()
                 content.title = "Feed the cat"
@@ -47,10 +57,43 @@ struct ContentView: View {
                 UNUserNotificationCenter.current().add(request)
                 
             }
-            
-            
         }
     }
+    
+    public func bestSet(setList: [SetDetail]) -> String? {
+        if(setList.isEmpty) {
+            return nil
+        }
+        var maxLbs = setList[0].lbs
+        for setDetail in setList {
+            if (setDetail.lbs > maxLbs) {
+                maxLbs = setDetail.lbs
+                print("maxLbs " + String(maxLbs))
+            }
+        }
+        
+        var maxSetList: [SetDetail] = []
+        for setDetail in setList {
+            if (setDetail.lbs == maxLbs) {
+                maxSetList.append(setDetail)
+            }
+        }
+        
+        if (maxSetList.count <= 1) {
+            return String(maxLbs) +  " X " + String(maxSetList[0].reps)
+        }
+        
+        var maxReps = maxSetList[0].reps
+        for setDetail in maxSetList {
+            if (setDetail.reps > maxReps) {
+                maxReps = setDetail.reps
+                print("maxReps " + String(maxReps))
+            }
+        }
+        
+        return String(maxLbs) +  " X " + String(maxReps)
+    }
+
 }
 
 #Preview {
